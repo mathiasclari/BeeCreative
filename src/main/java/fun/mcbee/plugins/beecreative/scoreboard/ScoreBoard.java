@@ -33,7 +33,7 @@ public class ScoreBoard implements Listener {
 
         BeeScoreboard lobbysb = new BeeScoreboard(player);
 
-        lobbysb.updateTitle(ChatColor.of("#0F7AD9")+""+ChatColor.BOLD + "McBee");
+        lobbysb.updateTitle(ChatColor.of("#FFBF00")+""+ChatColor.BOLD + "Creative");
 
         this.boards.put(player.getUniqueId(), lobbysb);
 
@@ -52,19 +52,19 @@ public class ScoreBoard implements Listener {
 
     }
 
-    //TODO do a scoreboard
     private void updateBoard(BeeScoreboard lobbysb) {
         lobbysb.updateLines(
                 "",
-                ChatColor.of("#738291")+"» "+ChatColor.of("#89B6DE")+"Kills: " + ChatColor.of("#C4CDD6")+lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
+                ChatColor.of("#738291")+""+ChatColor.BOLD+"| "+ChatColor.of("#F28C28")+""+ChatColor.BOLD+"Flight: " + ChatColor.of("#FAD5A5")+ (lobbysb.getPlayer().isFlying() ? "Yes" : "No"),
                 "",
-                ChatColor.of("#738291")+"» "+ChatColor.of("#89B6DE")+"Time left: " + ChatColor.of("#C4CDD6")+"",
+                ChatColor.of("#738291")+""+ChatColor.BOLD+"| "+ChatColor.of("#F28C28")+""+ChatColor.BOLD+"Help: "+ChatColor.of("#FAD5A5")+"/help",
                 "",
-                ChatColor.of("#0F7AD9")+""+ChatColor.BOLD + "discord.gg/mcbee"
+                ChatColor.of("#FFBF00")+""+ChatColor.BOLD + "discord.gg/mcbee"
 
 
         );
 
 
     }
+
 }
