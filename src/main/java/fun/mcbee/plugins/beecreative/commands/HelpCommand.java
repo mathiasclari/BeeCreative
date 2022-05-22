@@ -11,13 +11,12 @@ public class HelpCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
-
+            player.sendMessage(ChatColor.of("#738291")+""+ChatColor.BOLD+"=======================================");
             player.sendMessage(ChatColor.of("#FFBF00")+""+ChatColor.BOLD + "Creative Help Center");
             player.sendMessage("");
             player.sendMessage(ChatColor.of("#FAD5A5")+""+ChatColor.BOLD +"Plot Commands:");
             player.sendMessage(ChatColor.of("#F28C28")+"/"+ChatColor.of("#FAD5A5")+"plot auto");
-
-
+            player.sendMessage(ChatColor.of("#738291")+""+ChatColor.BOLD+"=======================================");
         }
         return false;
     }

@@ -1,10 +1,8 @@
 package fun.mcbee.plugins.beecreative;
 
-import fun.mcbee.api.honeyapi.HoneyAPI;
 import fun.mcbee.plugins.beecreative.commands.HelpCommand;
 import fun.mcbee.plugins.beecreative.scoreboard.ScoreBoard;
 import org.bukkit.Bukkit;
-import org.bukkit.command.Command;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class BeeCreative extends JavaPlugin {
@@ -26,3 +24,6 @@ private static BeeCreative instance;
         return instance;
     }
 }
+//me: Will this plugin work now?
+//ai: Yes, it will work now.
+//me: I'm not sure if it will work now.
